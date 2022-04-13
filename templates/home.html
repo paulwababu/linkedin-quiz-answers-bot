@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Exams Registration(Unregistered)</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/sign-in/signin.css" rel="stylesheet">
+    
+  </head>
+  <body class="text-center" onload="alert('To search for answers, no need of writing the whole question down! Just write like the first 3 words of the question, the system will do the rest!')">
+    <form class="form-signin border border-primary" method="POST">               
+    {% csrf_token %}
+      <img class="mb-4" src="https://paulwababu.github.io/admin-dashboard/pic_bulboff.png" alt="">
+      <br>
+      <h1 class="h3 mb-3 font-weight-normal">LinkedIn Skill Assessments Test Answers</h1>
+      <br>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      Question: <input type="text" name="question" id="inputEmail" class="form-control" placeholder="Question" required autofocus>
+      <br>
+      <style>
+        .select-css{display:block;font-size:16px;font-family:sans-serif;font-weight:700;color:#444;line-height:1.3;padding:.6em 1.4em .5em .8em;width:100%;max-width:100%;box-sizing:border-box;margin:0;border:1px solid #aaa;box-shadow:0 1px 0 1px rgba(0,0,0,.04);border-radius:.5em;-moz-appearance:none;-webkit-appearance:none;appearance:none;background-color:#fff;background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),linear-gradient(to bottom,#fff 0,#e5e5e5 100%);background-repeat:no-repeat,repeat;background-position:right .7em top 50%,0 0;background-size:.65em auto,100%}.select-css::-ms-expand{display:none}.select-css:hover{border-color:#888}.select-css:focus{border-color:#aaa;box-shadow:0 0 1px 3px rgba(59,153,252,.7);box-shadow:0 0 0 3px -moz-mac-focusring;color:#222;outline:0}.select-css option{font-weight:400}:root:lang(ar) .select-css,:root:lang(iw) .select-css,[dir=rtl] .select-css{background-position:left .7em top 50%,0 0;padding:.6em .8em .5em 1.4em}.select-css:disabled,.select-css[aria-disabled=true]{color:graytext;background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22graytext%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),linear-gradient(to bottom,#fff 0,#e5e5e5 100%)}.select-css:disabled:hover,.select-css[aria-disabled=true]{border-color:#aaa}body{margin:2rem}
+      </style>
+      <br>
+
+      Category: <select formControlName="userRole" class="select-css form-control" name="question_category">
+        <option selected disabled aria-readonly="true" aria-required="true">ALL</option>
+        <option value="1">Adobe Acrobat</option>
+        <option value="2">Accounting</option>
+        <option value="3">Abode Illustrator</option>
+        <option value="4">Adobe Photoshop</option>
+        <option value="5">Adobe Premiere</option>
+        <option value="6">Adobe XD</option>
+        <option value="7">Adobe Lightroom</option>
+        <option value="8">Adobe After-Effects</option>
+        <option value="9">Adobe Premier-Pro</option>
+        <option value="10">Agile Methodologies</option>
+        <option value="11">Android</option>
+        <option value="12">Angular</option>
+        <option value="13">AutoCAD</option>
+        <option value="14">Auto-desk-fusion-360</option>
+        <option value="15">AWS-Lambda</option>
+        <option value="16">AWS-Quiz</option>
+        <option value="17">Bash</option>
+        <option value="18">C #</option>
+        <option value="19">C++ (German)</option>
+        <option value="20">C++ (English)</option>
+        <option value="21">C</option>
+        <option value="22">CSS</option>
+        <option value="23">CyberSecurity</option>
+        <option value="24">Django Framework</option>
+        <option value="25">Dotnet Framework</option>
+        <option value="26">Eclipse</option>
+        <option value="27">Front End Development</option>
+        <option value="28">Git</option>
+        <option value="29">Go</option>
+        <option value="30">Google Ads</option>
+        <option value="31">Google Analytics</option>
+        <option value="32">Google Cloud Platform</option>
+        <option value="33">Hadoop</option>
+        <option value="34">HTML</option>
+        <option value="35">IT Operations</option>
+        <option value="36">Java</option>
+        <option value="37">JavaScript</option>
+        <option value="38">JQuery</option>
+        <option value="39">JSON</option>
+        <option value="40">Linux</option>
+        <option value="41">Machine Learning</option>
+        <option value="42">MATLAB</option>
+        <option value="43">Maven</option>
+        <option value="44">Microsoft Access</option>
+        <option value="45">Microsoft Azure</option>
+        <option value="46">Microsoft Excel</option>
+        <option value="47">Microsoft Outlook</option>
+        <option value="48">Microsoft PowerBI</option>
+        <option value="49">Microsoft Powerpoint</option>
+        <option value="50">Microsoft Project</option>
+        <option value="51">Microsoft Word</option>
+        <option value="52">Mongo DB</option>
+        <option value="53">MySQL</option>
+        <option value="54">Node.js</option>
+        <option value="55">No SQL</option>
+        <option value="56">Objective C</option>
+        <option value="57">OOP</option>
+        <option value="58">PHP</option>
+        <option value="59">Python</option>
+        <option value="60">QuickBooks</option>
+        <option value="61">R</option>
+        <option value="62">React</option>
+        <option value="63">REST API</option>
+        <option value="64">Revit</option>
+        <option value="65">Ruby</option>
+        <option value="66">RUST</option>
+        <option value="67">SCALA</option>
+        <option value="68">SEO</option>
+        <option value="69">SharePoint</option>
+        <option value="70">SolidWorks</option>
+        <option value="71">Spring Framework</option>
+        <option value="72">Swift</option>
+        <option value="73">T-SQL</option>
+        <option value="74">Unity</option>
+        <option value="75">VBA</option>
+        <option value="76">Visio</option>
+        <option value="77">Windows Server</option>
+        <option value="78">XML</option>
+    </select>
+      <br>
+      <br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Check Now!</button>
+      <p>
+        <div class="alert alert-primary" role="alert">
+          Answer ticked with [x] below
+        </div>
+      </p>
+      <p>
+        <div class="alert alert-info" role="alert">
+          {% if lines %}
+          {{lines}}
+          {% else %}
+          No Answers Found
+          {% endif %}
+        </div>
+      </p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2021-2022</p>
+      <p class="mt-5 mb-3 text-muted">Made with ease by <a href="https://github.com/paulwababu">PaulSaul</a></p>
+    </form>
+  </body>
+</html>
